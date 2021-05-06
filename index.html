@@ -14,6 +14,18 @@
             #WARNING{
                 background: red;
             }
+            .shark{
+                border: 10px ridge blue;
+            }
+            #beach{
+                border: 20px ridge red;
+            }
+            #Song{
+                background: blue;
+                width: 50%;
+                height: 200px;
+                overflow: auto;
+            }
         </style>
         
     </head>
@@ -32,10 +44,9 @@
         </ol>
         
         <h3 id = "intro">Intro</h3>
+        <p id = "reason">The <em>shark</em> is awesome because <strong>sharks are just overall amazing.</strong> "With fossil records dating back 400 million years, sharks have outlived the dinosaurs and many other forms of life currently on earth. There are more than 1,000 species of sharks and rays, with new species discovered every year." </p>
         
-        <p>The <em>shark</em> is awesome because <strong>sharks are just overall amazing.</strong> "With fossil records dating back 400 million years, sharks have outlived the dinosaurs and many other forms of life currently on earth. There are more than 1,000 species of sharks and rays, with new species discovered every year." </p>
-        
-        <img src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png" alt = "shark" width = "500">
+        <img class = "shark" src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png" alt = "shark" width = "500">
         
         <h3 id = "Cool-Facts">Here are some cool facts about sharks!</h3>
         
@@ -57,7 +68,7 @@
         
         <p> The Great Whtie shark is the largest meat-eating fish on earth today, but there were once sharks that may have been <em><strong>three times bigger</strong></em>! Scientists have named the ancient monster shark <em> <strong>Carcharodon Megalodon</strong></em>. The Megalodon had teeth that were <em><strong>more than six inches long</strong></em>!</p>
         
-        <img src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png" alt = "shark" width = "500">
+        <img class = "shark" src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/shark.png" alt = "shark" width = "500">
         
         <h2 id = "Wonk"> That's So Wonk!</h2>
         
@@ -82,10 +93,10 @@
         </ol>
         
         <h4 id="WARNING"> Don't go here!!!!! </h4>
-        <img src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-waves-at-sunset.png" alr = "sunset at the beach" width = "500">
+        <img id = "beach" src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-waves-at-sunset.png" alr = "sunset at the beach" width = "500">
         
-        <h3 id = "Song"> Here's a song about sharks!</h3>
-        <h4> Shark Fighter by The Aquabats</h4>
+        <h3> Here's a song about sharks!</h3>
+        <div id = "Song"><h4> Shark Fighter by The Aquabats</h4>
         <p> I'm a, shark fighter! <br>
         I fight sharks! <br>
         I fight em in the water, <br>
@@ -148,6 +159,7 @@
         He is not mean he's just getting even! <br>
         He will not die til all sharks cry! <br>
         </p>
+        </div>
         
         <h2 id = "sources-cited">Sources Cited</h2>
         <ul id = "sources">
