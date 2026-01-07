@@ -53,7 +53,7 @@
   font-family: "Golos Text", sans-serif;
 }
 body {
-  padding: 0 3rem;
+  padding: 0 2rem;
 
   line-height: 1.25;
 
@@ -74,26 +74,12 @@ section {
   margin-bottom: 4rem;
 
   /* border: 1px solid blue; */
-
-  /* animation: fadeUp linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%; */
 }
-/* @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-} */
 button {
   cursor: pointer;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /* #endregion */
@@ -688,29 +674,35 @@ footer {
 /*#region Timeline */
 
 .description {
-  padding: 4rem 0;
-}
+  height: 400px;
 
-.description-text {
-  width: 75%;
-
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   text-align: center;
   letter-spacing: 0.75px;
 }
 .description-text h1 {
-  padding: 1.5rem;
+  margin-bottom: 2rem;
 
   font-size: 4rem;
 
   color: var(--color7);
 }
 .description-text p {
+  width: 75%;
+
+  margin: 0 auto;
+  margin-top: 2rem;
+
   font-size: 1.25rem;
 
   color: var(--color3);
 }
+
+
+
 
 
 /* Timeline */
@@ -1105,7 +1097,7 @@ footer {
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 
   flex: 1;
@@ -1116,6 +1108,8 @@ footer {
 .chat {
   display: grid;
   place-items: center;
+
+  text-align: center;
 }
 .chat h1 {
   font-size: 4rem;
@@ -1141,7 +1135,7 @@ footer {
   display: grid;
   place-items: center;
 
-  padding: 2rem;
+  padding: 1rem;
 }
 form {
   display: grid;
