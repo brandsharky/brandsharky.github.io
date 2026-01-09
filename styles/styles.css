@@ -404,7 +404,7 @@ nav a:hover {
 /*#region Descriptions */
 
 .description {
-  height: 400px;
+  min-height: 400px;
 
   display: flex;
   align-items: center;
@@ -447,9 +447,16 @@ nav a:hover {
 /*#region Introduction */
 
 .intro {
+  min-height: 400px;
+
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+
+  /* border: 1px solid red; */
 }
+
 .rainbow-text {
   background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
   background-size: 200%;
@@ -518,14 +525,15 @@ nav a:hover {
 }
 
 .intro-img {
-  display: flex;
-  justify-content: center;
-  height: 25rem;
-
-  /* border: 1px solid red; */
+  display: grid;
+  place-items: center;
 }
+
 .intro-img img {
+  height: 15rem;
+
   border-radius: 1rem;
+  box-shadow: 0 0 30px gray;
 }
 
 /* #endregion */
