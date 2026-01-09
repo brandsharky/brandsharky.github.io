@@ -401,6 +401,44 @@ nav a:hover {
 
 /* #endregion */
 
+/*#region Descriptions */
+
+.description {
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  letter-spacing: 0.75px;
+}
+.description-text h1 {
+  margin-bottom: 2rem;
+
+  font-size: 4rem;
+
+  background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: animate-gradient 10s linear infinite;
+}
+.description-text p {
+  width: 75%;
+
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  font-size: 1.25rem;
+
+  color: var(--color3);
+}
+
+/*#endregion */
+
 
 
 
@@ -672,40 +710,6 @@ footer {
 
 
 /*#region Timeline */
-
-.description {
-  height: 400px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  letter-spacing: 0.75px;
-}
-.description-text h1 {
-  margin-bottom: 2rem;
-
-  font-size: 4rem;
-
-  color: var(--color7);
-}
-.description-text p {
-  width: 75%;
-
-  margin: 0 auto;
-  margin-top: 2rem;
-
-  font-size: 1.25rem;
-
-  color: var(--color3);
-}
-
-
-
-
-
-/* Timeline */
 .timeline ul {
   padding: 3rem;
 
