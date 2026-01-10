@@ -107,22 +107,19 @@ const user = "basharky";
 const domain = "outlook.com";
 
 const emailLink = document.getElementById("email-link");
-const tooltip = document.getElementById("tooltip");
+const emailUsername = document.getElementById("email-username");
 const copyBtn = document.getElementById("copy-btn");
 
 const email = `${user}@${domain}`;
 
 // Build email text + mailto dynamically
-emailLink.textContent = email;
+emailUsername.textContent = email;
 emailLink.href = `mailto:${email}`;
 
 // Copy functionality
 copyBtn.addEventListener("click", (e) => {
   e.preventDefault(); // safety
   navigator.clipboard.writeText(email);
-
-  tooltip.classList.add("show");
-  setTimeout(() => tooltip.classList.remove("show"), 1200);
 });
 //#endregion
 
