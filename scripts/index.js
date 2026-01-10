@@ -111,9 +111,10 @@ const emailUsername = document.getElementById("email-username");
 const copyBtn = document.getElementById("copy-btn");
 
 const email = `${user}@${domain}`;
+const emailText = `${user}`;
 
 // Build email text + mailto dynamically
-emailUsername.textContent = email;
+emailUsername.textContent = emailText;
 emailLink.href = `mailto:${email}`;
 
 // Copy functionality
