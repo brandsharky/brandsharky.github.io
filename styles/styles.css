@@ -547,6 +547,13 @@ nav a:hover {
 
   position: relative;
   overflow: hidden;
+
+  mask-image: linear-gradient(to right,
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 1) 10%,
+  rgba(0, 0, 0, 1) 90%,
+  rgba(0, 0, 0, 0)
+  );
 }
 .carousels .learning {
   position: relative;
@@ -646,7 +653,7 @@ footer {
   display: grid;
   place-items: center;
 
-  padding: 2rem;
+  padding: 1rem;
 }
 .container2 .identity-links {
   width: 75%;
@@ -698,8 +705,8 @@ footer {
 }
 
 
-.identity-links a button {
-  z-index: 5;
+.identity-links a #copy-btn {
+  z-index: 50;
 
   width: 1.25rem;
   height: 1.25rem;
@@ -709,8 +716,10 @@ footer {
   outline: none;
   background-color: transparent;
   border: none;
+
+  transition: transform 1s ease;
 }
-.identity-links a button .copy-symbol {
+.identity-links a #copy-btn .copy-symbol {
   width: 1.25rem;
   height: 1.25rem;
 
@@ -718,13 +727,12 @@ footer {
 
   transition: stroke 1s ease, transform 1s ease;
 }
-.identity-links a:hover .copy-symbol {
+.identity-links a:hover #copy-btn .copy-symbol {
   stroke: var(--color6);
-  transform: scale(1.25);
 }
 
-.identity-links a button:active .copy-symbol {
-  stroke: green;
+.identity-links a #copy-btn:hover {
+  transform: scale(1.25);
 }
 
 /* #endregion */
@@ -1170,6 +1178,8 @@ form {
   display: grid;
   gap: 1.5rem;
 
+  margin-bottom: 1rem;
+
   width: 100%;
 }
 .form-group {
@@ -1234,6 +1244,8 @@ textarea {
   align-items: center;
   line-height: 0;
   gap: 1rem;
+
+  margin-top: 1rem;
 }
 .form-links svg {
   height: 3rem;
