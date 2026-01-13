@@ -330,7 +330,7 @@ h1 {
   border-radius: 999px;
   border: 0.25rem solid transparent;
   background:
-    linear-gradient(var(--color8), var(--color8)) padding-box,
+    linear-gradient(var(--color1), var(--color1)) padding-box,
     conic-gradient(
       from var(--gradient-angle),
       var(--clr-1),
