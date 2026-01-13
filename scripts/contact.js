@@ -59,10 +59,6 @@ themeSwitch.addEventListener("click", () => {
 //#endregion
 
 
-
-
-
-
 //#region Form Submission
 // Initialize EmailJS with your Public key
 document.addEventListener("DOMContentLoaded", () => {
@@ -94,7 +90,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 //#endregion
-
-
-
 

@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //#endregion
 
+
 //#region Darkmode/Lightmode Toggle
 let darkmode = localStorage.getItem("lightmode");
 const themeSwitch = document.getElementById("theme-switch");
@@ -58,9 +59,12 @@ themeSwitch.addEventListener("click", () => {
 //#endregion
 
 
+//#region Hamburger Menu
+const nav = document.querySelector(".navbar");
+const toggle = document.querySelector(".nav-toggle");
 
-
-
-
-
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+//#endregion
 

@@ -59,6 +59,16 @@ themeSwitch.addEventListener("click", () => {
 //#endregion
 
 
+//#region Hamburger Menu
+const nav = document.querySelector(".navbar");
+const toggle = document.querySelector(".nav-toggle");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+//#endregion
+
+
 //#region Typing Adjectives Animation
 const words = ["developer", "programmer", "creator", "problem solver", "tinkerer", "thinker", "student", "dreamer"];
 const typedText = document.getElementById("typed");
@@ -123,18 +133,4 @@ copyBtn.addEventListener("click", (e) => {
   navigator.clipboard.writeText(email);
 });
 //#endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
