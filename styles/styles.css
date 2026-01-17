@@ -53,8 +53,7 @@
   font-family: "Golos Text", sans-serif;
 }
 body {
-  padding: 0 2rem;
-  padding-top: 8rem;
+  padding: 8rem 3rem 3rem 3rem;
 
   line-height: 1.25;
 
@@ -400,6 +399,9 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
+  body {
+    padding: 8rem 2rem 2rem 2rem;
+  }
   .navbar {
     border-radius: 0;
     width: 100%;
@@ -417,13 +419,15 @@ nav ul li a:hover {
 
     color: var(--color7);
     border-radius: 0.5rem;
-    border: 1px solid var(--color7);
+    border: 1px solid transparent;
 
-    transition: color 0.5s ease, background-color 0.5s ease;
+    transition: color 0.7s ease, background-color 0.7s ease, border 0.7s ease;
   }
   .nav-toggle:hover {
     color: var(--color7);
     background-color: color-mix(in srgb, currentColor 12%, transparent);
+    border: 1px solid var(--color6);
+
   }
   .nav-links {
     display: none;
@@ -1106,6 +1110,14 @@ footer {
 .highlight-text {
   font-weight: bold;
   text-transform: uppercase;
+
+  background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: animate-gradient 10s linear infinite;
 }
 
 .contact-form {

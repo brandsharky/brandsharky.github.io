@@ -59,6 +59,17 @@ themeSwitch.addEventListener("click", () => {
 //#endregion
 
 
+//#region Hamburger Menu
+const nav = document.querySelector(".navbar");
+const toggle = document.querySelector(".nav-toggle");
+
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  toggle.textContent = nav.classList.contains("open") ? "✖" : "☰";
+});
+//#endregion
+
+
 //#region Form Submission
 // Initialize EmailJS with your Public key
 document.addEventListener("DOMContentLoaded", () => {
@@ -90,4 +101,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 //#endregion
+
 

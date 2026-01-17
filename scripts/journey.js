@@ -65,6 +65,7 @@ const toggle = document.querySelector(".nav-toggle");
 
 toggle.addEventListener("click", () => {
   nav.classList.toggle("open");
+  toggle.textContent = nav.classList.contains("open") ? "✖" : "☰";
 });
 //#endregion
 
@@ -96,4 +97,5 @@ toggle.addEventListener("click", () => {
   window.addEventListener("scroll", callbackFunc);
 })();
 //#endregion
+
 

@@ -65,6 +65,7 @@ const toggle = document.querySelector(".nav-toggle");
 
 toggle.addEventListener("click", () => {
   nav.classList.toggle("open");
+  toggle.textContent = nav.classList.contains("open") ? "✖" : "☰";
 });
 //#endregion
 
@@ -133,4 +134,5 @@ copyBtn.addEventListener("click", (e) => {
   navigator.clipboard.writeText(email);
 });
 //#endregion
+
 
