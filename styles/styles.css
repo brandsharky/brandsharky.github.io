@@ -786,7 +786,7 @@ footer {
 
 /*#region Timeline */
 .timeline ul {
-  padding: 3rem;
+  padding: 3rem 1rem;
 
   background-color: transparent;
 }
@@ -799,7 +799,7 @@ footer {
 
   list-style-type: none;
 
-  background: var(--color2);
+  background: linear-gradient(to bottom, #38bdf8, #818cf8);
 
   /* timeline "line" */
 }
@@ -833,12 +833,13 @@ footer {
 
   padding: 1rem;
 
-  background: var(--color1);
+  /* background: var(--color1); */
+  /* background-color: color-mix(in srgb, currentColor 12%, transparent); */
   border-radius: 0.5rem;
 
   color: var(--color3);
 
-  border: 1px solid var(--color3);
+  border: 1px solid var(--color7);
 
   /* entire event box */
 }
@@ -927,21 +928,21 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 900px) {
   .timeline ul li .event {
-    width: 250px;
+    width: 300px;
   }
 
   .timeline ul li:nth-child(even) .event {
-    left: -289px;
+    left: -339px;
     /*250+45-6*/
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .timeline ul li {
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   .timeline ul li .event {
-    width: calc(100vw - 91px);
+    width: 350px;
   }
 
   .timeline ul li:nth-child(even) .event {
@@ -949,9 +950,9 @@ footer {
   }
 
   .timeline ul li:nth-child(even) .event::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    left: -1rem;
+    border-width: 0.5rem 1rem 0.5rem 0;
+    border-color: transparent var(--color3) transparent transparent;
   }
 }
 
