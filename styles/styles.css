@@ -492,10 +492,8 @@ nav ul li a:hover {
   min-height: 400px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr auto;
   gap: 2rem;
-
-  /* border: 1px solid red; */
 }
 
 .rainbow-text {
@@ -575,6 +573,14 @@ nav ul li a:hover {
 
   border-radius: 1rem;
   box-shadow: 0 0 30px gray;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* #endregion */
@@ -708,7 +714,7 @@ footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  column-gap: 1.5rem;
+  column-gap: 1rem;
 
   padding: 1rem;
 
@@ -775,6 +781,13 @@ footer {
 
 .identity-links a #copy-btn:hover {
   transform: scale(1.25);
+}
+
+
+@media screen and (max-width: 800px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* #endregion */
@@ -967,10 +980,13 @@ footer {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /* 280px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  justify-content: center;
 
-  padding: 2rem;
+  width: 100%;
+
+  padding: 2rem 0;
 }
 
 .project-card {
@@ -981,7 +997,6 @@ footer {
   background: var(--color1);
   color: var(--color3);
   border-radius: 1rem;
-
   box-shadow: var(--shadow);
 
   transition: transform 0.5s ease;
