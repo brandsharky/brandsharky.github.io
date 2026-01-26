@@ -481,6 +481,82 @@ nav ul li a:hover {
 
 /*#endregion */
 
+/*#region Under the Hood */
+#settings-btn {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 9;
+
+  display: grid;
+  place-items: center;
+
+  background: transparent;
+  color: var(--color3);
+  border-radius: 50%;
+  border: none;
+
+  transition: transform 1s ease;
+}
+#settings-btn:hover {
+  transform: scale(1.1);
+}
+
+#settings-panel {
+  position: fixed;
+  bottom: 3.5rem;
+  right: 1rem;
+  z-index: 10;
+
+  width: fit-content;
+  max-width: 300px;
+
+  background: transparent;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+
+  opacity: 0;
+
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#settings-panel h3 {
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0.5rem;
+
+  text-align: center;
+
+  color: var(--color1);
+  background-color: var(--color3);
+}
+#settings-panel ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+
+  list-style-type: none;
+}
+#settings-panel li {
+  width: 100%;
+
+  font-size: 0.95rem;
+}
+
+#settings-panel.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/*#endregion */
+
 
 
 
@@ -754,7 +830,7 @@ footer {
 
 
 .identity-links a #copy-btn {
-  z-index: 50;
+  z-index: 8;
 
   width: 1.25rem;
   height: 1.25rem;
