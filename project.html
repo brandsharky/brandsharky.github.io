@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Brandon Arroyo</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/project.js" defer></script>
+  <meta name="author" content="Brandon Arroyo">
+  <meta name="description" content="Explore projects by Brandon Arroyo, an aspiring machine learning engineer, in a variety of different programming languages.">
   <link rel="icon" type="image/x-icon" href="images/icon.svg">
+  <title>Projects | Brandon Arroyo</title>
+
+  <meta property="og:title" content="Projects | Brandon Arroyo">
+  <meta property="og:description" content="View Brandon Arroyo’s projects showcasing programming skills and a growing focus on machine learning and AI.">
+  <meta property="og:image" content="https://brandsharky.github.io/images/icon.svg">
+  <meta property="og:url" content="https://brandsharky.github.io/project.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/project.js"></script>
 </head>
 <body>
   <div id="loader">
@@ -49,17 +64,18 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="description">
+
+    <section class="description">
         <div class="description-text">
           <h1>My Projects</h1>
           <p>
             This section highlights some of the projects I’ve built throughout my journey as a developer. Each one represents a step in my learning process, from early experiments to more refined work, and reflects my growth, curiosity, and passion for building things through code.
           </p>
         </div>
-      </section>
+    </section>
 
-      <section class="projects">
+
+    <section class="projects">
         <!-- <div class="project-card">
           <div class="project-preview">
             <img src="images/project-one.png" alt="Screenshot of Project One">
@@ -76,29 +92,7 @@
             </div>
           </div>
         </div> -->
-      </section>
-
-      <button id="settings-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      </button>
-      <div id="settings-panel">
-        <h3>Under the Hood</h3>
-        <ul>
-          <li>Created: <span id="created"></span></li>
-          <li>Last Modified: <span id="modified"></span></li>
-        </ul>
-
-        <ul>
-          <li>Local Time: <span id="time"></span></li>
-          <li>Weather: <span id="weather">...</span></li>
-        </ul>
-
-        <ul>
-          <li>Viewport: <span id="viewport"></span></li>
-          <li>Browser: <span id="browser"></span></li>
-        </ul>
-      </div>
-    </main>
+    </section>
   </div>
 </body>
 </html>

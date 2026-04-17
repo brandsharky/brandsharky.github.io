@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Brandon Arroyo</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-  <script src="scripts/contact.js" defer></script>
+  <meta name="author" content="Brandon Arroyo">
+  <meta name="description" content="Contact Brandon Arroyo, an aspiring machine learning engineer, for collaborations, projects, or opportunities in software and AI.">
   <link rel="icon" type="image/x-icon" href="images/icon.svg">
+  <title>Contact | Brandon Arroyo</title>
+
+  <meta property="og:title" content="Contact | Brandon Arroyo">
+  <meta property="og:description" content="Reach out to Brandon Arroyo for collaborations or opportunities in software development and machine learning.">
+  <meta property="og:image" content="https://brandsharky.github.io/images/icon.svg">
+  <meta property="og:url" content="https://brandsharky.github.io/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/contact.js"></script>
 </head>
 <body>
   <div id="loader">
@@ -50,18 +64,18 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="contact">
-        <div class="chat">
+
+    <section class="contact">
+      <div class="chat">
           <div class="text">
             <h1><span class="rainbow-text">Contact</span></h1>
             <p>
               Let's build something <span class="highlight-text">awesome</span> together
             </p>
           </div>
-        </div>
+      </div>
 
-        <div class="contact-form">
+      <div class="contact-form">
           <form>
             <div class="form-group">
               <label for="firstname">First Name</label>
@@ -94,30 +108,8 @@
               </svg>
             </a>
           </div>
-        </div>
-      </section>
-
-      <button id="settings-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      </button>
-      <div id="settings-panel">
-        <h3>Under the Hood</h3>
-        <ul>
-          <li>Created: <span id="created"></span></li>
-          <li>Last Modified: <span id="modified"></span></li>
-        </ul>
-
-        <ul>
-          <li>Local Time: <span id="time"></span></li>
-          <li>Weather: <span id="weather">...</span></li>
-        </ul>
-
-        <ul>
-          <li>Viewport: <span id="viewport"></span></li>
-          <li>Browser: <span id="browser"></span></li>
-        </ul>
       </div>
-    </main>
+    </section>
   </div>
 </body>
 </html>
