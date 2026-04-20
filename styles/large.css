@@ -1,7 +1,4 @@
 
-
-
-
 /*#region Multiple Pages */
 
 /*#region Nav */
@@ -47,23 +44,7 @@
 }
 /*#endregion */
 
-
-
-
-
-
 /*#endregion */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -95,9 +76,6 @@
 /*#endregion */
 
 
-
-
-
 /*#region Footer */
 @media screen and (max-width: 350px) {
   .container2 {
@@ -106,82 +84,84 @@
 }
 /*#endregion */
 
-
-
-
-
-
-
 /*#endregion */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /*#region Timeline */
+@media only screen and (min-width: 768px) {
+  .timeline {
+    width: 92.5%;
+  }
+
+  .timeline:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 4px;
+    height: 100%;
+
+    transform: translateX(-50%);
+    background: linear-gradient(
+      to bottom,
+      var(--color4) 0%,
+      var(--color5) 100%
+    );
+    border-radius: 999px;
+  }
+  .timeline ul {
+    display: block;
+  }
+  .timeline ul li {
+    position: relative;
+
+    width: 50%;
+
+    margin-bottom: 50px;
+
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  .timeline ul li::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+
+    height: 20px;
+    width: 20px;
+
+    border-radius: 999px;
+    background-color: var(--color3);
+
+    transition: background-color 0.5s ease;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: var(--color4);
+  }
+}
 /*#endregion */
-
-
-
-
-
-
-
-
-
 
 
 
@@ -190,50 +170,7 @@
 
 
 
-
-
-
-
-
 /*#region Contact */
 /*#endregion */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
