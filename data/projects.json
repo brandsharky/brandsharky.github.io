@@ -1,0 +1,130 @@
+{
+  "projects": [
+    {
+      "name": "Portfolio",
+      "stack": ["HTML", "CSS", "JavaScript", "JSON", "API"],
+      "earlier": false,
+      "image": "portfolio",
+      "links": ["https://brandsharky.github.io/"],
+      "linkContent": ["Portfolio"],
+      "description": "This very portfolio was handmade from scratch, utilizing my skills acquired throughout my journey in computer programming."
+    },
+    {
+      "name": "Edufutbol",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "earlier": false,
+      "image": "edufutbol",
+      "links": ["http://edufutbol.com/"],
+      "linkContent": ["Edufutbol.com"],
+      "description": "Edufutbol is a solo web project that explores the history and culture of soccer, designed to educate and engage users through accessible, sports-focused content."
+    },
+    {
+      "name": "Cinematrix",
+      "stack": ["HTML", "CSS", "JavaScript", "JSON"],
+      "earlier": false,
+      "image": "cinematrix",
+      "links": ["https://brandsharky.github.io/wdd231/final/index.html", "https://github.com/brandsharky/wdd231/tree/main/final"],
+      "linkContent": ["Cinematrix", "Code"],
+      "description": "Cinematrix is a clean, clutter-free movie discovery platform that helps users quickly find family-friendly films, explore curated selections, revisit classics, and build a personalized list of favorites."
+    },
+    {
+      "name": "Eternal Quest",
+      "stack": ["C#"],
+      "earlier": false,
+      "image": "eternal_quest",
+      "links": ["https://github.com/brandsharky/projects/tree/main/EternalQuest"],
+      "linkContent": ["Code"],
+      "description": "A C# goal-tracking application that motivates users through a points and ranking system and supports one-time, repeatable, and ongoing goals."
+    },
+    {
+      "name": "Shark Tides",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "earlier": false,
+      "image": "shark_tides",
+      "links": ["https://brandsharky.github.io/projects/Shark%20Tides/", "https://github.com/brandsharky/projects/tree/main/Shark%20Tides"],
+      "linkContent": ["Shark Tides", "Code"],
+      "description": "A responsive, educational website that provides beginner-friendly shark facts, images, and a quiz while following the principles of dynamic web design."
+    },
+    {
+      "name": "Task Force One",
+      "stack": ["Python"],
+      "earlier": false,
+      "image": "task_force_one",
+      "links": ["https://github.com/brandsharky/projects/tree/main/Taskforce%20One"],
+      "linkContent": ["Code"],
+      "description": "A Python-based daily planner that allows users to add tasks by date, helping organize and manage daily responsibilities through a simple interface."
+    },
+    {
+      "name": "Mindfullness",
+      "stack": ["C#"],
+      "earlier": false,
+      "image": "mindfullness",
+      "links": ["https://github.com/brandsharky/projects/tree/main/Mindfulness"],
+      "linkContent": ["Code"],
+      "description": "A C# application that guides users through structured breathing, reflection, and listing exercises, helping reduce stress and build consistent mindfulness habits."
+    },
+    {
+      "name": "Scripture Memorizer",
+      "stack": ["C#"],
+      "earlier": false,
+      "image": "scripture_memorizer",
+      "links": ["https://github.com/brandsharky/projects/tree/main/ScriptureMemorizer"],
+      "linkContent": ["Code"],
+      "description": "A C# application that helps users memorize scriptures through guided exercises that progressively hide words, reinforcing recall and strengthening long-term memory."
+    },
+    {
+      "name": "UFO Hangman",
+      "stack": ["C++"],
+      "earlier": false,
+      "image": "ufo_hangman",
+      "links": ["https://github.com/brandsharky/projects/tree/main/UFO_GAME"],
+      "linkContent": ["Code"],
+      "description": "A C++ console game inspired by Hangman, where players guess letters to avoid being abducted by a UFO through progressively revealed ASCII visuals."
+    },
+    {
+      "name": "Daily Journal",
+      "stack": ["C#"],
+      "earlier": false,
+      "image": "daily_journal",
+      "links": ["https://github.com/brandsharky/projects/tree/main/Journal"],
+      "linkContent": ["Code"],
+      "description": "A C# journaling application that encourages consistent writing by providing daily prompts and automatically recording entries, making reflection more accessible and structured."
+    },
+    {
+      "name": "Flappy Bird",
+      "stack": ["Python"],
+      "earlier": false,
+      "image": "flappy_bird",
+      "links": ["https://github.com/brandsharky/projects/tree/main/FlappyBird"],
+      "linkContent": ["Code"],
+      "description": "A Python-based Flappy Bird remake built by following a tutorial, serving as a hands-on exercise in game logic, physics, and user input handling."
+    },
+    {
+      "name": "Form Validation",
+      "stack": ["PHP"],
+      "earlier": true,
+      "image": "form_validation",
+      "links": ["https://github.com/brandsharky/projects/tree/main/Form%20Validation"],
+      "linkContent": ["Code"],
+      "description": "A simple PHP-based form validation project that ensures accurate and secure user input through server-side validation integrated with HTML forms."
+    },
+    {
+      "name": "The Coolest Creature",
+      "stack": ["HTML", "CSS"],
+      "earlier": true,
+      "image": "coolest_creature",
+      "links": ["https://brandsharky.github.io/coolest-creature/", "https://github.com/brandsharky/coolest-creature"],
+      "linkContent": ["Coolest Creature", "Code"],
+      "description": "My first website built from scratch. An early informational website about sharks featuring beginner-friendly facts and pictures."
+    },
+    {
+      "name": "The Coolest Creature 2.0",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "earlier": true,
+      "image": "coolest_creature_2",
+      "links": ["https://brandsharky.github.io/CISIWEB-74/Coolest%20Creature/", "https://github.com/brandsharky/CISIWEB-74/tree/main/Coolest%20Creature"],
+      "linkContent": ["Coolest Creature 2.0", "Code"],
+      "description": "A JavaScript-driven informational shark website with interactive forms, user input handling, and a dynamic \"days since\" calculator made from scratch."
+    }
+  ]
+}
