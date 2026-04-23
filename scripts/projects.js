@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loaderFadeOut();
   toggleLightMode();
   toggleHamburgerMenu();
+  getProjects();
 });
 //#endregion
 
@@ -29,13 +30,7 @@ async function getProjects() {
     console.log(err);
   }
 }
-
-
-getProjects();
 //#endregion
-
-
-
 
 
 
@@ -129,28 +124,8 @@ function displayProjects(projectsList) {
     card.appendChild(content);
     container.appendChild(card);
   });
-
-
-
-
-
-
-
-
-
-
-
 }
 //#endregion
-
-
-
-
-
-
-
-
-
 
 
 
@@ -173,7 +148,12 @@ function setupFilters() {
         displayProjects(allProjects);
       } else {
         const filtered = allProjects.filter(project => project.stack.includes(button.textContent));
+
         displayProjects(filtered);
+
+        if (filtered.length === 0) {
+          document.querySelector(".projects").innerHTML = "coming soon...";
+        }
       }
     })
 
