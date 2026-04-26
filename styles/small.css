@@ -612,18 +612,6 @@ nav ul li a:hover {
   rgba(0, 0, 0, 0)
   );
 }
-.carousels .learning {
-  position: relative;
-  bottom: 0.5rem;
-
-  display: inline-block;
-
-  margin: 0 0.5rem;
-
-  font-size: 10px;
-
-  color: var(--color2);
-}
 
 @keyframes scrollLeft {
   to { left: -225px; }
@@ -669,8 +657,9 @@ nav ul li a:hover {
   margin-left: 0.25rem;
 
   text-align: center;
+  font-size: 1.5rem;
 
-  color: var(--color3);
+  color: var(--headers);
 }
 /*#endregion */
 
@@ -698,9 +687,12 @@ nav ul li a:hover {
 
   color: var(--text);
 }
-.container1 h2 #easter-egg {
+.container1 h2 .easter-egg {
   transition: color 0.5s ease, text-shadow 0.5s ease;
-  animation: secretBlink 15s infinite;
+  animation: secretBlink 10s infinite;
+}
+.container1 h2 .easter-egg:nth-child(2) {
+  animation-delay: 5s;
 }
 @keyframes secretBlink {
   0%, 98%, 100% {
@@ -710,7 +702,7 @@ nav ul li a:hover {
     opacity: 0;
   }
 }
-.container1 h2 #easter-egg:hover {
+.container1 h2 .easter-egg:hover {
   color: var(--headers);
   text-shadow: 0 0 2px var(--headers);
   animation-play-state: paused;
@@ -997,6 +989,7 @@ nav ul li a:hover {
   display: block;
 
   object-fit: cover;
+  object-position: top;
 
   width: 100%;
   height: 100%;
@@ -1071,8 +1064,214 @@ nav ul li a:hover {
   transition: color 0.5s ease, border 0.5s ease;
 }
 .project-links a:hover {
+  color: var(--accent1);
+  border: 2px solid var(--accent1);
+}
+
+.project-content button {
+
+  width: fit-content;
+
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  border-radius: 999px;
+  background-color: transparent;
   color: var(--accent3);
   border: 2px solid var(--accent3);
+
+  transition: border 0.5s ease, color 0.5s ease;
+}
+.project-content button:hover {
+  border: 2px solid var(--text);
+  color: var(--text);
+}
+/*#endregion */
+
+
+/*#region Dialogue Box */
+.modal {
+  width: 90%;
+  height: 90%;
+  max-width: 1000px;
+
+  margin: 2rem auto;
+
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid var(--text);
+  box-shadow: var(--shadow);
+}
+::backdrop {
+  backdrop-filter: blur(6px);
+}
+
+.modal-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem;
+
+  font-family: system-ui, sans-serif;
+
+  overflow-y: auto;
+
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+
+.modal-header {
+  display: grid;
+  gap: 1rem;
+}
+.modal-header h2 {
+  margin-bottom: 0;
+
+  font-size: 1.8rem;
+}
+.modal-header p {
+  color: var(--dark-text);
+}
+
+
+.modal-hero img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+  max-height: 475px;
+  object-fit: cover;
+  object-position: top;
+
+  border: 2px solid var(--headers);
+  border-bottom: 2px solid var(--headers);
+  border-radius: 1rem;
+}
+
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 2rem;
+}
+
+.modal-main {
+  display: grid;
+  gap: 2rem;
+}
+.modal-main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 {
+    width: fit-content;
+
+    padding: 0.25rem 0.5rem;
+
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+
+    color: var(--bg);
+    background-color: var(--text);
+    border-radius: 1rem;
+  }
+  p {
+    line-height: 1.5;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    list-style-position: inside;
+  }
+}
+
+.modal-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  align-self: start;
+}
+.modal-sidebar > div {
+  display: grid;
+  gap: 0.5rem;
+
+  h3 {
+    color: var(--headers);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    list-style-position: inside;
+    list-style-type: none;
+    font-weight: 500;
+  }
+  ul li a {
+    position: relative;
+
+    text-decoration: none;
+    font-weight: 500;
+
+    color: var(--accent3);
+  }
+  ul li a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 2px;
+
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+  }
+  ul li a:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+
+.modal-content button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  padding: 0;
+
+  line-height: 0;
+
+  overflow: hidden;
+
+  background-color: var(--card-bg);
+  color: var(--headers);
+  border-radius: 999px;
+  border: 2px solid var(--headers);
+
+  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+.modal-content button:hover {
+  background-color: var(--headers);
+  color: var(--card-bg);
+  border: 2px solid var(--card-bg);
 }
 /*#endregion */
 
