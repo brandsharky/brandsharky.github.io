@@ -52,8 +52,8 @@
       "earlier": false,
       "image": "cinematrix",
       "links": {
-        "Cinematrix": "https://brandsharky.github.io/wdd231/final/index.html",
-        "Code": "https://github.com/brandsharky/wdd231/tree/main/final"
+        "Cinematrix": "https://brandsharky.github.io/cinematrix",
+        "Code": "https://github.com/brandsharky/cinematrix"
       },
       "description": "Cinematrix is a clean, clutter-free movie discovery platform that helps users quickly find family-friendly films, explore curated selections, revisit classics, and build a personalized list of favorites.",
       "details": {
@@ -75,7 +75,7 @@
       "earlier": false,
       "image": "eternal_quest",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/EternalQuest"
+        "Code": "https://github.com/brandsharky/EternalQuest"
       },
       "description": "A C# goal-tracking application that motivates users through a points and ranking system and supports one-time, repeatable, and ongoing goals.",
       "details": {
@@ -97,8 +97,8 @@
       "earlier": false,
       "image": "shark_tides",
       "links": {
-        "Shark Tides": "https://brandsharky.github.io/projects/Shark%20Tides/",
-        "Code": "https://github.com/brandsharky/projects/tree/main/Shark%20Tides"
+        "Shark Tides": "https://brandsharky.github.io/SharkTides/",
+        "Code": "https://github.com/brandsharky/SharkTides"
       },
       "description": "A responsive, educational website that provides beginner-friendly shark facts, images, and a quiz while following the principles of dynamic web design.",
       "details": {
@@ -121,7 +121,7 @@
       "earlier": false,
       "image": "task_force_one",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/Taskforce%20One"
+        "Code": "https://github.com/brandsharky/TaskForceOne"
       },
       "description": "A Python-based daily planner that allows users to add tasks by date, helping organize and manage daily responsibilities through a simple interface.",
       "details": {
@@ -143,7 +143,7 @@
       "earlier": false,
       "image": "mindfullness",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/Mindfulness"
+        "Code": "https://github.com/brandsharky/Mindfullness"
       },
       "description": "A C# application that guides users through structured breathing, reflection, and listing exercises, helping reduce stress and build consistent mindfulness habits.",
       "details": {
@@ -165,7 +165,7 @@
       "earlier": false,
       "image": "scripture_memorizer",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/ScriptureMemorizer"
+        "Code": "https://github.com/brandsharky/ScriptureMemorizer"
       },
       "description": "A C# application that helps users memorize scriptures through guided exercises that progressively hide words, reinforcing recall and strengthening long-term memory.",
       "details": {
@@ -187,7 +187,7 @@
       "earlier": false,
       "image": "ufo_hangman",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/UFO_GAME"
+        "Code": "https://github.com/brandsharky/UFOHangman"
       },
       "description": "A C++ console game inspired by Hangman, where players guess letters to avoid being abducted by a UFO through progressively revealed ASCII visuals.",
       "details": {
@@ -208,7 +208,7 @@
       "earlier": false,
       "image": "daily_journal",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/Journal"
+        "Code": "https://github.com/brandsharky/DailyJournal"
       },
       "description": "A C# journaling application that encourages consistent writing by providing daily prompts and automatically recording entries, making reflection more accessible and structured.",
       "details": {
@@ -230,7 +230,7 @@
       "earlier": false,
       "image": "flappy_bird",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/FlappyBird"
+        "Code": "https://github.com/brandsharky/FlappyBird"
       },
       "description": "A Python-based Flappy Bird remake built by following a tutorial, serving as a hands-on exercise in game logic, physics, and user input handling.",
       "details": {
@@ -252,7 +252,7 @@
       "earlier": true,
       "image": "form_validation",
       "links": {
-        "Code": "https://github.com/brandsharky/projects/tree/main/Form%20Validation"
+        "Code": "https://github.com/brandsharky/FormValidation"
       },
       "description": "A simple PHP-based form validation project that ensures accurate and secure user input through server-side validation integrated with HTML forms.",
       "details": {
@@ -296,8 +296,8 @@
       "earlier": true,
       "image": "coolest_creature_2",
       "links": {
-        "Coolest Creature 2.0": "https://brandsharky.github.io/CISIWEB-74/Coolest%20Creature/",
-        "Code": "https://github.com/brandsharky/CISIWEB-74/tree/main/Coolest%20Creature"
+        "Coolest Creature 2.0": "https://brandsharky.github.io/coolest-creature-2.0/",
+        "Code": "https://github.com/brandsharky/coolest-creature-2.0"
       },
       "description": "A JavaScript-driven informational shark website with interactive forms, user input handling, and a dynamic \"days since\" calculator made from scratch.",
       "details": {
