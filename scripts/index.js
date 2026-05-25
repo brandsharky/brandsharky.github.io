@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //#region Typing Adjectives Animation
-const words = ["who am i", "i am an aspiring machine learning engineer", "i am a software developer", "i am a programmer", "i am a creator", "i am a problem solver", "i am a tinkerer", "i am a thinker", "i am a student", "i am a hard worker"];
+const words = ["who am i", "i am an aspiring machine learning engineer", "I am an aspiring full-stack developer", "i am a software developer", "i am a programmer", "i am a creator", "i am a problem solver", "i am a tinkerer", "i am a thinker", "i am a student", "i am a hard worker"];
 const typedText = document.getElementById("type-text");
 
 let wordIndex = 0;
