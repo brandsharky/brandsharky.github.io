@@ -1,4 +1,4 @@
-import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu } from "./functions.js";
+import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createRain } from "./functions.js";
 
 
 
@@ -119,6 +119,12 @@ copyBtn.addEventListener("click", (e) => {
     }, 500);
   });
 })
+//#endregion
+
+
+
+//#region Create Rain
+createRain();
 //#endregion
 
 

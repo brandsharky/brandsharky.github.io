@@ -1,4 +1,4 @@
-import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu } from "./functions.js";
+import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createRain } from "./functions.js";
 
 
 
@@ -26,6 +26,12 @@ document.getElementById("results").innerHTML = `
 
   <a href="contact.html">< Back to Contact Page</a>
 `;
+//#endregion
+
+
+
+//#region Create Rain
+createRain();
 //#endregion
 
 

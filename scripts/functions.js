@@ -75,3 +75,53 @@ export function toggleHamburgerMenu() {
 //#endregion
 
 
+
+//#region Rain Animation
+export function createRain() {
+  const canvas = document.getElementById("rainCanvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let raindrops = [];
+
+  function createDrop() {
+    return {
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      length: Math.random() * 15 + 10,
+      velocityY: Math.random() * 1.5 + 4,
+      opacity: Math.random() * 0.5 + 0.2,
+    };
+  }
+
+  for (let i = 0; i < 10; i++) {
+    raindrops.push(createDrop());
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = "#7b7b7b80";
+    ctx.lineWidth = 1;
+
+    for (let drop of raindrops) {
+      ctx.beginPath();
+      ctx.moveTo(drop.x, drop.y);
+      ctx.lineTo(drop.x, drop.y + drop.length);
+      ctx.stroke();
+      drop.y += drop.velocityY;
+      if (drop.y > canvas.height) {
+        drop.y = -drop.length;
+        drop.x = Math.random() * canvas.width;
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+//#endregion
+
+

@@ -1,6 +1,6 @@
 /*#region Site Wide */
 :root {
-  --bg: rgb(17, 17, 17);
+  --bg: rgb(21, 21, 21);
   --headers: rgb(250, 250, 250);
 
   --text: rgb(230, 230, 230);
@@ -74,6 +74,15 @@ body {
   padding: 6rem 1rem 2rem;
 
   /* border: 1px solid yellow; */
+}
+#rainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
@@ -444,8 +453,8 @@ nav ul li a:hover {
 
   background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
   background-size: 200%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 
   animation: animate-gradient 10s linear infinite;
@@ -467,8 +476,8 @@ nav ul li a:hover {
 .rainbow-text {
   background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
   background-size: 200%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 
   animation: animate-gradient 10s linear infinite;
@@ -528,10 +537,13 @@ nav ul li a:hover {
   margin: 0 1rem;
 
   color: #00ff9c;
-  background-color: rgb(17, 17, 17);
+  background-color: transparent;
   border-radius: 1rem;
 
   border: 2px solid #00ff9c;
+}
+.lightmode .terminal {
+  background-color: rgb(21, 21, 21);
 }
 .terminal .prompt {
   margin-right: 0.625rem;
@@ -605,6 +617,12 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
 
+  -webkit-mask-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
   mask-image: linear-gradient(to right,
   rgba(0, 0, 0, 0),
   rgba(0, 0, 0, 1) 10%,
@@ -847,6 +865,7 @@ nav ul li a:hover {
 
   padding: 1rem;
 
+  background-color: var(--bg);
   border-radius: 1rem;
   box-shadow: var(--shadow);
 }
@@ -980,6 +999,7 @@ nav ul li a:hover {
 
   background-color: rgba(0, 0, 0, 0.6);
   color: rgb(250, 250, 250);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius: 999px;
   overflow: hidden;
@@ -1027,6 +1047,8 @@ nav ul li a:hover {
   display: block;
 
   padding: 0.25rem 0.5rem;
+
+  font-size: 0.8rem;
 
   border-radius: 999px;
   background-color: var(--card-bg);
@@ -1104,6 +1126,7 @@ nav ul li a:hover {
   box-shadow: var(--shadow);
 }
 ::backdrop {
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
 
@@ -1331,8 +1354,8 @@ nav ul li a:hover {
 
   background: linear-gradient(110deg, #7800ff, #f07 35%, #f9b11f 45%, #7800ff 90%) 0 0 / 300% 100%;
   background-size: 200%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 
   animation: animate-gradient 10s linear infinite;
@@ -1383,6 +1406,7 @@ input, button, select, textarea {
   transition: border 0.5s ease;
 }
 .form-group input:not([type="submit"]):focus, .form-group textarea:focus  {
+  background-color: var(--bg);
   border: 2px solid var(--accent3);
 }
 

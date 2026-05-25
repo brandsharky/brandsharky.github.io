@@ -1,4 +1,4 @@
-import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu } from "./functions.js";
+import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createRain } from "./functions.js";
 
 
 
@@ -321,6 +321,12 @@ function createModal(project) {
   document.body.appendChild(modal);
   modal.showModal();
 }
+//#endregion
+
+
+
+//#region Create Rain
+createRain();
 //#endregion
 
 
