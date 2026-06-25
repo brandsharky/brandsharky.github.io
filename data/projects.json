@@ -18,6 +18,24 @@
       }
     },
     {
+      "name": "Telematrix",
+      "stack": ["HTML", "CSS", "JavaScript", "JSON", "API"],
+      "earlier": false,
+      "image": "telematrix",
+      "links": {
+        "Telematrix": "https://brandsharky.github.io/telematrix",
+        "Code": "https://github.com/brandsharky/telematrix"
+      },
+      "description": "A modern TV show discovery platform powered by third-party APIs that helps users explore family-friendly series, manage personalized watchlists, track currently watching shows, and submit recommendations.",
+      "details": {
+        "tagline": "A modern TV show discovery platform powered by third-party APIs and personalized watch tracking",
+        "problem": "The goal was to create a clean and clutter-free platform for discovering family-friendly television shows while gaining hands-on experience integrating and utilizing third-party APIs in a real-world web application.",
+        "features": ["Dynamic TV show discovery powered by IMDb and OMDb data", "Automatically generated show pages with detailed information", "Watchlist functionality using localStorage for persistent user preferences", "Currently Watching system that allows users to track active shows", "Random featured show display on the home page", "Recommendation form integrated with EmailJS for user submissions"],
+        "challenges": "Integrating multiple third-party APIs while handling and displaying external data consistently across the application; designing reusable JavaScript functions that could dynamically generate show cards and pages while maintaining a clean and scalable codebase",
+        "learning": "Strengthened my understanding of API integration, asynchronous JavaScript, and working with external data sources. I also gained valuable experience designing reusable components, managing client-side state with localStorage, and building larger-scale dynamic web applications."
+      }
+    },
+    {
       "name": "Cinematrix",
       "stack": ["HTML", "CSS", "JavaScript", "JSON"],
       "earlier": false,
@@ -26,7 +44,7 @@
         "Cinematrix": "https://brandsharky.github.io/cinematrix",
         "Code": "https://github.com/brandsharky/cinematrix"
       },
-      "description": "Cinematrix is a clean, clutter-free movie discovery platform that helps users quickly find family-friendly films, explore curated selections, revisit classics, and build a personalized list of favorites.",
+      "description": "A clean, clutter-free movie discovery platform that helps users quickly find family-friendly films, explore curated selections, revisit classics, and build a personalized list of favorites.",
       "details": {
         "tagline": "A streamlined movie discovery website focused on simplicity and family-friendly content",
         "problem": "The goal was to create a simple and intuitive platform for discovering family-friendly movies without the clutter and complexity of modern streaming interfaces.",
