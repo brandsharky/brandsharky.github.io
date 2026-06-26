@@ -17,6 +17,8 @@
 
   --card-bg: #242424;
   --shadow: 0 1px 3px rgba(255, 255, 255, 0.04), 0 6px 16px rgba(0, 0, 0, 0.85);
+
+  --stars: white;
 }
 .lightmode {
   --bg: rgb(245, 245, 245);
@@ -36,6 +38,8 @@
 
   --card-bg: #d6d6d6;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 6px 16px rgba(0, 0, 0, 0.12);
+
+  --stars: black;
 }
 @property --gradient-angle {
   syntax: "<angle>";
@@ -83,6 +87,14 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: -1;
+}
+.star {
+  position: absolute; background: var(--stars); border-radius: 50%;
+  animation: twinkle var(--duration) infinite ease-in-out;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
