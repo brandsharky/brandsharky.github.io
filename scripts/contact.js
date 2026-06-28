@@ -1,9 +1,11 @@
-import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createRain } from "./functions.js";
+import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createStars } from "./functions.js";
 
 
 
 //#region Loader Fade Out, Darkmode/Lightmode Toggle, Hamburger Menu
 document.addEventListener("DOMContentLoaded", () => {
+  createStars();
+
   loaderFadeOut();
   toggleLightMode();
   toggleHamburgerMenu();
@@ -66,12 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 })
-//#endregion
-
-
-
-//#region Create Rain
-createRain();
 //#endregion
 
 

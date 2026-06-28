@@ -76,9 +76,9 @@ export function toggleHamburgerMenu() {
 
 
 
-//#region Rain Animation
-export function createRain() {
-  const container = document.getElementById("rainCanvas");
+//#region Star Animation
+export function createStars() {
+  const container = document.getElementById("starSpace");
   for (let i = 0; i < 150; i++) {
     const star = document.createElement("div");
     star.className = "star";

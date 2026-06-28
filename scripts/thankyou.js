@@ -1,9 +1,11 @@
-import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createRain } from "./functions.js";
+import { loaderFadeOut, toggleLightMode, toggleHamburgerMenu, createStars } from "./functions.js";
 
 
 
 //#region Loader Fade Out, Darkmode/Lightmode Toggle, Hamburger Menu
 document.addEventListener("DOMContentLoaded", () => {
+  createStars();
+
   loaderFadeOut();
   toggleLightMode();
   toggleHamburgerMenu();
@@ -24,14 +26,8 @@ document.getElementById("results").innerHTML = `
 
   <p>Submitted: <span>${formInfo.get("timestamp")}</span></p>
 
-  <a href="contact.html">< Back to Contact Page</a>
+  <a href="contact.html">Back to Contact Page</a>
 `;
-//#endregion
-
-
-
-//#region Create Rain
-createRain();
 //#endregion
 
 
