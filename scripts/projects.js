@@ -39,7 +39,7 @@ async function getProjects() {
 //#region Setup Filters
 function setupFilters() {
   const container = document.querySelector(".filters")
-  const filters = ["All", "HTML", "CSS", "JavaScript", "Python", "Java", "C#", "C++", "PHP", "JSON", "API"];
+  const filters = ["All", "HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express.js", "Python", "Java", "C#", "C++", "PHP", "JSON", "API", "SQL", "PostgreSQL"];
 
   filters.forEach(filter => {
     const button = document.createElement("button");
