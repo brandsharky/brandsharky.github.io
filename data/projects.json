@@ -1,20 +1,21 @@
 {
   "projects": [
     {
-      "name": "Developer Portfolio",
-      "stack": ["HTML", "CSS", "JavaScript", "JSON", "API"],
+      "name": "CSE 340 Service Network",
+      "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "EJS", "PostgreSQL", "SQL"],
       "earlier": false,
-      "image": "portfolio",
+      "image": "service_network",
       "links": {
-        "Portfolio": "https://brandsharky.github.io/"
+        "Service Network": "https://cse340-c96w.onrender.com/",
+        "Code": "https://github.com/brandsharky/cse340"
       },
-      "description": "My personal developer portfolio website built from scratch, showcasing my skills, projects, and development journey as a programmer.",
+      "description": "A full-stack service management application built throughout a backend development course using server-side rendering, relational databases, authentication, middleware, and MVC architecture.",
       "details": {
-        "tagline": "A dynamic developer portfolio showcasing projects, skills, and interactive UI design",
-        "problem": "The goal was to create a personal portfolio that not only presents my projects, but also reflects my technical skills through interactive and dynamic user experiences.",
-        "features": ["Terminal-style typing animation for an engaging introduction", "Infinite scrolling carousels to display technical stack", "Responsive vertical timeline showcasing my programming journey", "Dynamic project rendering from a JSON data source", "Interactive modals for detailed project breakdowns", "Contact form with EmailJS integration and live confirmation display"],
-        "challenges": "Implementing smooth infinite carousels and a rotating navigation border without performance issues; dynamically generating and formatting project modals",
-        "learning": "Strengthened my ability to build dynamic front-end systems using JavaScript, improved my understanding of DOM manipulation and event-driven design, and built a foundation for creating more complex, data-driven applications."
+        "tagline": "A full-stack service management application built progressively with Node.js, Express, EJS, and PostgreSQL",
+        "problem": "The goal was to transform an existing web application into a fully dynamic, database-driven system while progressively learning and implementing the core concepts of backend web development. Each week introduced new functionality through learning activities, team development, and individual assignments, culminating in a final feature that integrated concepts from across the course.",
+        "features": ["Server-side rendered pages using Node.js, Express.js, and EJS", "Relational PostgreSQL database for organizations, service projects, categories, and users", "MVC architecture separating routes, controllers, models, and views", "Full CRUD functionality for organizations, projects, and categories", "Many-to-many relationships between service projects and categories", "User registration, login, logout, and session management", "Password hashing and secure user authentication using bcrypt", "Role-based authorization middleware for protecting administrator functionality", "Server-side and client-side form validation with user feedback", "User dashboard displaying volunteer projects and account information", "Middleware for flash messages and request-based application behavior", "Production deployment using Render"],
+        "challenges": "The primary challenge was continuously expanding an existing application without breaking the functionality that had already been developed. As new concepts were introduced, the application had to evolve from basic server-side routing into a structured MVC application with database relationships, CRUD operations, validation, sessions, authentication, and role-based authorization. Managing the flow of data between routes, controllers, models, SQL queries, and EJS templates required careful debugging and a stronger understanding of how the different layers of a backend application interact.",
+        "learning": "Developed a strong foundation in backend web development and learned how frontend applications connect to servers, databases, and persistent user data. Strengthened my understanding of Node.js, Express.js, EJS, PostgreSQL, SQL, MVC architecture, middleware, authentication, authorization, sessions, validation, and deployment. Most importantly, gained experience progressively developing and maintaining a larger application while learning how individual backend concepts work together as part of a complete system."
       }
     },
     {
@@ -36,21 +37,20 @@
       }
     },
     {
-      "name": "CSE 340 Service Network",
-      "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "EJS", "PostgreSQL", "SQL"],
+      "name": "Developer Portfolio",
+      "stack": ["HTML", "CSS", "JavaScript", "JSON", "API"],
       "earlier": false,
-      "image": "service_network",
+      "image": "portfolio",
       "links": {
-        "Service Network": "https://cse340-c96w.onrender.com/",
-        "Code": "https://github.com/brandsharky/cse340"
+        "Portfolio": "https://brandsharky.github.io/"
       },
-      "description": "A full-stack service management application built throughout a backend development course using server-side rendering, relational databases, authentication, middleware, and MVC architecture.",
+      "description": "My personal developer portfolio website built from scratch, showcasing my skills, projects, and development journey as a programmer.",
       "details": {
-        "tagline": "A full-stack service management application built progressively with Node.js, Express, EJS, and PostgreSQL",
-        "problem": "The goal was to transform an existing web application into a fully dynamic, database-driven system while progressively learning and implementing the core concepts of backend web development. Each week introduced new functionality through learning activities, team development, and individual assignments, culminating in a final feature that integrated concepts from across the course.",
-        "features": ["Server-side rendered pages using Node.js, Express.js, and EJS", "Relational PostgreSQL database for organizations, service projects, categories, and users", "MVC architecture separating routes, controllers, models, and views", "Full CRUD functionality for organizations, projects, and categories", "Many-to-many relationships between service projects and categories", "User registration, login, logout, and session management", "Password hashing and secure user authentication using bcrypt", "Role-based authorization middleware for protecting administrator functionality", "Server-side and client-side form validation with user feedback", "User dashboard displaying volunteer projects and account information", "Middleware for flash messages and request-based application behavior", "Production deployment using Render"],
-        "challenges": "The primary challenge was continuously expanding an existing application without breaking the functionality that had already been developed. As new concepts were introduced, the application had to evolve from basic server-side routing into a structured MVC application with database relationships, CRUD operations, validation, sessions, authentication, and role-based authorization. Managing the flow of data between routes, controllers, models, SQL queries, and EJS templates required careful debugging and a stronger understanding of how the different layers of a backend application interact.",
-        "learning": "Developed a strong foundation in backend web development and learned how frontend applications connect to servers, databases, and persistent user data. Strengthened my understanding of Node.js, Express.js, EJS, PostgreSQL, SQL, MVC architecture, middleware, authentication, authorization, sessions, validation, and deployment. Most importantly, gained experience progressively developing and maintaining a larger application while learning how individual backend concepts work together as part of a complete system."
+        "tagline": "A dynamic developer portfolio showcasing projects, skills, and interactive UI design",
+        "problem": "The goal was to create a personal portfolio that not only presents my projects, but also reflects my technical skills through interactive and dynamic user experiences.",
+        "features": ["Terminal-style typing animation for an engaging introduction", "Infinite scrolling carousels to display technical stack", "Responsive vertical timeline showcasing my programming journey", "Dynamic project rendering from a JSON data source", "Interactive modals for detailed project breakdowns", "Contact form with EmailJS integration and live confirmation display"],
+        "challenges": "Implementing smooth infinite carousels and a rotating navigation border without performance issues; dynamically generating and formatting project modals",
+        "learning": "Strengthened my ability to build dynamic front-end systems using JavaScript, improved my understanding of DOM manipulation and event-driven design, and built a foundation for creating more complex, data-driven applications."
       }
     },
     {
