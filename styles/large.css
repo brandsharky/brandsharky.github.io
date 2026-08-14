@@ -206,6 +206,27 @@
 
 
 
+/*#region Project */
+@media screen and (max-width: 1200px) {
+  .details-hero {
+    flex-direction: column;
+  }
+  .details-hero .sidebar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding: 0;
+  }
+}
+/*#endregion */
+
+
+
+
+
 /*#region Contact */
 @media screen and (max-width: 600px) {
   .contact {

@@ -1123,80 +1123,85 @@ nav ul li a:hover {
   color: var(--accent2);
   border: 2px solid var(--accent2);
 }
+/*#endregion */
 
-.project-content button {
-
-  width: fit-content;
-
-  margin: 0 auto;
-  padding: 0.5rem 1rem;
-
-  border-radius: 999px;
-  background-color: transparent;
-  color: var(--accent3);
-  border: 2px solid var(--accent3);
-
-  transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
-}
-.project-content button:hover {
-  border: 2px solid var(--text);
-  color: var(--text);
-  background-color: var(--text-bg);
-}
 /*#endregion */
 
 
-/*#region Dialogue Box */
-.modal {
-  width: 90%;
-  height: 90%;
-  max-width: 1000px;
 
-  margin: 2rem auto;
 
-  background-color: transparent;
-  border-radius: 1rem;
-  border: 2px solid var(--text);
-  box-shadow: var(--shadow);
-}
-::backdrop {
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-}
 
-.modal-content {
-  position: relative;
 
+
+
+
+
+/*#region Project */
+#project-details {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
+  width: 90%;
+  max-width: 1400px;
+
+  margin: 0 auto;
   padding: 2rem;
 
   font-family: system-ui, sans-serif;
 
-  overflow-y: auto;
-
   background-color: var(--bg);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
   color: var(--text);
 }
+#project-details > a {
+  display: grid;
+  place-items: center;
 
+  width: fit-content;
 
-.modal-header {
+  padding: 0.5rem 0.75rem;
+
+  font-size: 1.325rem;
+
+  color: var(--accent1);
+  border: 2px solid var(--accent1);
+  border-radius: 1rem;
+
+  transition: color 0.5s ease, border 0.5s ease;
+}
+#project-details > a:hover {
+  color: var(--accent2);
+  border: 2px solid var(--accent2);
+}
+
+.details-header {
   display: grid;
   gap: 1rem;
 }
-.modal-header h2 {
+.details-header h2 {
   margin-bottom: 0;
 
-  font-size: 1.8rem;
+  font-size: 2.25rem; /* 1.8rem*/
 }
-.modal-header p {
+.details-header p {
+  font-size: 1.125rem;
+
   color: var(--dark-text);
 }
 
+.details-hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 2rem;
+}
+.details-hero img {
+  flex: 1;
 
-.modal-hero img {
   display: block;
 
   width: 100%;
@@ -1208,61 +1213,35 @@ nav ul li a:hover {
   border-radius: 1rem;
 }
 
-
-.modal-body {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: start;
-  gap: 2rem;
-}
-
-.modal-main {
-  display: grid;
-  gap: 2rem;
-}
-.modal-main > div {
+.details-hero .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
+
+  align-self: start;
+
+  padding: 0 2rem;
+}
+.details-hero .sidebar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 
   h3 {
     width: fit-content;
 
     padding: 0.25rem 0.5rem;
 
-    font-size: 0.85rem;
+    font-size: 1.325rem;
     letter-spacing: 0.08rem;
     text-transform: uppercase;
 
     color: var(--bg);
     background-color: var(--text);
     border-radius: 1rem;
-  }
-  p {
-    line-height: 1.5;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 
-    list-style-position: inside;
-  }
-}
 
-.modal-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 
-  align-self: start;
-}
-.modal-sidebar > div {
-  display: grid;
-  gap: 0.5rem;
-
-  h3 {
-    color: var(--headers);
   }
   ul {
     display: flex;
@@ -1272,6 +1251,7 @@ nav ul li a:hover {
     list-style-position: inside;
     list-style-type: none;
     font-weight: 500;
+    font-size: 1.25rem;
   }
   ul li a {
     position: relative;
@@ -1302,35 +1282,40 @@ nav ul li a:hover {
   }
 }
 
-
-.modal-content button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-  width: 2rem;
-  height: 2rem;
-
-  padding: 0;
-
-  line-height: 0;
-
-  overflow: hidden;
-
-  background-color: var(--card-bg);
-  color: var(--headers);
-  border-radius: 999px;
-  border: 2px solid var(--headers);
-
-  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+.details-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.modal-content button:hover {
-  background-color: var(--headers);
-  color: var(--card-bg);
-  border: 2px solid var(--card-bg);
-}
-/*#endregion */
+.details-body > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
+  h3 {
+    width: fit-content;
+
+    padding: 0.25rem 0.5rem;
+
+    font-size: 1.325rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+
+    color: var(--bg);
+    background-color: var(--text);
+    border-radius: 1rem;
+  }
+  p {
+    line-height: 1.5;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    list-style-position: inside;
+  }
+}
 /*#endregion */
 
 
