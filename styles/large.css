@@ -209,6 +209,7 @@
 /*#region Project */
 @media screen and (max-width: 1200px) {
   .details-hero {
+    display: flex;
     flex-direction: column;
   }
   .details-hero .sidebar {
@@ -217,8 +218,6 @@
     flex-wrap: wrap;
 
     width: 100%;
-
-    padding: 0;
   }
 }
 /*#endregion */
