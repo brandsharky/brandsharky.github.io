@@ -24,6 +24,10 @@ function createProjectDetails(projectData) {
   const project = projectData.find((project) => project.image === projectId);
 
   const container = document.getElementById("project-details");
+  if (!project) {
+    container.innerHTML = `<p>Project not found.</p><a href="projects.html">Back to Projects Page</a>`;
+    return;
+  }
   container.innerHTML = `
   <div class="details-header">
     <h2>${project.name}</h2>
@@ -45,7 +49,10 @@ function createProjectDetails(projectData) {
       <div>
         <h3>Links</h3>
         <ul>
-          ${Object.entries(project.links).map(([name, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a></li>`).join("")}
+          ${Object.entries(project.links).map(([name, url]) => url
+            ? `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a></li>`
+            : `<li>Coming Soon</li>`
+          ).join("")}
         </ul>
       </div>
     </div>

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 //#region Setup Filters
 function setupFilters() {
   const container = document.querySelector(".filters")
-  const filters = ["All", "HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express.js", "Python", "Java", "C#", "C++", "PHP", "JSON", "API", "SQL", "PostgreSQL"];
+  const filters = ["All", "HTML", "CSS", "JavaScript", "EJS", "Node.js", "Express.js", "Python", "Pygame", "Swift", "Java", "C#", "C++", "PHP", "JSON", "API", "SQL", "PostgreSQL", "Next.js", "React", "TypeScript", "Tailwind CSS", "Auth.js"];
 
   filters.forEach(filter => {
     const button = document.createElement("button");
@@ -118,11 +118,19 @@ function displayProjects(projectsList) {
     const links = document.createElement("div");
     links.classList.add("project-links");
     for (const text in project.links) {
-      const link = document.createElement("a");
-      link.href = `${project.links[text]}`;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = `${text}`;
+      const url = project.links[text];
+      const link = document.createElement(url ? "a" : "span");
+
+      if (url) {
+        link.href = url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = text;
+      } else {
+        link.classList.add("disabled");
+        link.textContent = `Coming Soon`;
+      }
+
       links.appendChild(link);
     }
     content.appendChild(links);

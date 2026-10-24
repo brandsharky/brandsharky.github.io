@@ -691,7 +691,7 @@ nav ul li a:hover {
 .item7 { animation-delay: calc(100s / 8 * (8 - 7) * -1); }
 .item8 { animation-delay: calc(100s / 8 * (8 - 8) * -1); }
 
-.itemLeft svg, .itemRight svg {
+.itemLeft svg, .itemRight svg, .itemLeft img, .itemRight img {
   width: 5rem;
   height: 5rem;
 }
@@ -835,17 +835,11 @@ nav ul li a:hover {
   text-align: center;
 
   border-radius: 999px;
-  border: 2px solid var(--bg);
-  color: var(--bg);
-
-  transition: color 1.5s ease, border 1.5s ease;
+  border: 2px solid var(--text);
+  color: var(--text);
 }
 .weather p {
   font-family: monospace;
-}
-.weather:hover {
-  color: var(--dark-text);
-  border: 2px solid var(--dark-text);
 }
 /*#endregion */
 
@@ -1125,6 +1119,17 @@ nav ul li a:hover {
 .project-links a:hover {
   color: var(--accent2);
   border: 2px solid var(--accent2);
+}
+.disabled {
+  flex: 1;
+
+  padding: 0.5rem;
+
+  text-align: center;
+
+  color: var(--text);
+  border: 2px solid var(--text);
+  border-radius: 999px;
 }
 /*#endregion */
 

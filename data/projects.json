@@ -1,12 +1,58 @@
 {
   "projects": [
     {
+      "name": "StudyHub",
+      "stack": ["Next.js", "Node.js", "React", "TypeScript", "Tailwind CSS", "Auth.js", "SQL"],
+      "earlier": false,
+      "image": "studyhub",
+      "links": {
+        "Live": "https://studyhub-flax-ten.vercel.app/",
+        "Code": "https://github.com/jkkitchen/studyhub"
+      },
+      "description": "A full-stack web application built with a team of six that helps college students organize courses, assignments, deadlines, and study resources in one dashboard. I led the frontend and reviewed and merged code as part of the team's pull request workflow.",
+      "details": {
+        "tagline": "A team-built student organization platform with Google sign-in, where I led the frontend design and helped review and merge team code",
+        "problem": "The goal was to give college students one simple place to manage their academic responsibilities instead of tracking courses, deadlines, and study materials across separate tools, while working with a team of six on a shared codebase using a professional Git workflow.",
+        "features": ["Google authentication using Auth.js and Google OAuth", "Personal dashboard highlighting upcoming assignments", "Create, view, edit, and delete courses, assignments, and study resources", "Assignments organized by course with due dates and completion tracking", "Study resources saved as external links and text notes tied to each course", "Reusable component library I built, including cards, buttons, links, forms, header, and navigation bar", "Styled login, onboarding, and main application pages", "Responsive interface for desktop, tablet, and mobile using Tailwind CSS", "Production deployment on Vercel"],
+        "challenges": "The biggest challenge was collaborating with six developers building different features on separate branches in one GitHub repository. We kept the codebase stable with a strict workflow of feature branches, focused pull requests, and teammate reviews. I took an active role by reviewing pull requests, checking that branches worked correctly before merging, and merging several of them myself. Another challenge was Google authentication, since connecting Google OAuth required correctly configuring credentials, environment variables, and redirect URIs for both local development and the deployed site before login worked reliably.",
+        "learning": "Gained hands-on experience building the frontend of a production-style application with Next.js, React, TypeScript, and Tailwind CSS. Strengthened my ability to design consistent, reusable, and accessible UI components across an entire application. Learned how professional teams collaborate through branching, pull requests, code review, and merging, and gained a practical understanding of how OAuth authentication connects a frontend to a backend."
+      }
+    },
+    {
+      "name": "Sacrament Meeting Planner",
+      "stack": ["Next.js", "Node.js", "React", "TypeScript", "Tailwind CSS", "Auth.js", "SQL"],
+      "earlier": false,
+      "image": "sacrament_meetings",
+      "links": {
+        "Live": "https://ba-sacrament-meetings.vercel.app/",
+        "Code": "https://github.com/brandsharky/sacrament-meetings"
+      },
+      "description": "A full-stack Next.js application, built week by week in a web development course, that lets bishopric leaders plan sacrament meeting agendas and lets members view current and past programs.",
+      "details": {
+        "tagline": "A full-stack meeting planner with a live PostgreSQL database, protected admin tools, and URL-driven search",
+        "problem": "The goal was to build a real application that helps ward leaders plan and review sacrament meeting programs, including leadership, announcements, hymns, musical numbers, speakers, and prayers, while members can view current and past programs. Each week added a new layer of professional web development to the same codebase.",
+        "features": [
+          "Typed data models in TypeScript for meetings and their program details",
+          "Live PostgreSQL database on Neon, so meeting data persists across restarts and deployments",
+          "Public and admin sections separated with Next.js route groups, each with its own layout and loading states",
+          "URL-based search by speaker, presiding, conducting, or meeting type, with pagination at five meetings per page",
+          "Create, edit, and delete meetings through Server Actions with accessible server-side form validation",
+          "Graceful error handling for failed operations and missing records",
+          "Sign in and sign out with protected admin routes that redirect unauthenticated users to the login page",
+          "Site-wide metadata defaults, custom page metadata, and an Open Graph image for link previews",
+          "Responsive Tailwind CSS styling, optimized fonts and images, and deployment on Vercel"
+        ],
+        "challenges": "The hardest part was working across every layer of the application at once: frontend styling, middleware, authentication and authorization, database queries, and validation. Each layer had to work correctly with the others, so a problem in one place often showed up somewhere else. Making error.tsx and not-found.tsx work was especially tricky, since I had to learn how Next.js scopes them by route segment so that failed operations and missing records were handled gracefully across many pages instead of just one. I also spent a lot of time making sure data was fetched from the database correctly and that user input was validated on the server, so only the content the application expected was ever saved.",
+        "learning": "Gained hands-on experience building and deploying a full-stack application with the Next.js App Router, TypeScript, and PostgreSQL. Strengthened my understanding of Server Actions, server-side validation, route groups, URL-driven state, authentication, and metadata. Most importantly, learned how to grow one application week by week without breaking what already worked."
+      }
+    },
+    {
       "name": "CSE 340 Service Network",
       "stack": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "EJS", "PostgreSQL", "SQL"],
       "earlier": false,
       "image": "service_network",
       "links": {
-        "Service Network": "https://cse340-c96w.onrender.com/",
+        "Live": "https://cse340-c96w.onrender.com/",
         "Code": "https://github.com/brandsharky/cse340"
       },
       "description": "A full-stack service management application built throughout a backend development course using server-side rendering, relational databases, authentication, middleware, and MVC architecture.",
@@ -24,7 +70,7 @@
       "earlier": false,
       "image": "telematrix",
       "links": {
-        "Telematrix": "https://brandsharky.github.io/telematrix",
+        "Live": "https://brandsharky.github.io/telematrix",
         "Code": "https://github.com/brandsharky/telematrix"
       },
       "description": "A modern TV show discovery platform powered by third-party APIs that helps users explore family-friendly series, manage personalized watchlists, track currently watching shows, and submit recommendations.",
@@ -42,7 +88,7 @@
       "earlier": false,
       "image": "portfolio",
       "links": {
-        "Portfolio": "https://brandsharky.github.io/"
+        "Live": "https://brandsharky.github.io/"
       },
       "description": "My personal developer portfolio website built from scratch, showcasing my skills, projects, and development journey as a programmer.",
       "details": {
@@ -59,7 +105,7 @@
       "earlier": false,
       "image": "cinematrix",
       "links": {
-        "Cinematrix": "https://brandsharky.github.io/cinematrix",
+        "Live": "https://brandsharky.github.io/cinematrix",
         "Code": "https://github.com/brandsharky/cinematrix"
       },
       "description": "A clean, clutter-free movie discovery platform that helps users quickly find family-friendly films, explore curated selections, revisit classics, and build a personalized list of favorites.",
@@ -77,7 +123,7 @@
       "earlier": false,
       "image": "edufutbol",
       "links": {
-        "Edufutbol.com": "http://edufutbol.com/"
+        "Live": "http://edufutbol.com/"
       },
       "description": "Edufutbol is a solo web project that explores the history and culture of futbol, designed to educate and engage users through accessible, sports-focused content.",
       "details": {
@@ -86,6 +132,50 @@
         "features": ["Structured content covering history, tournaments, and iconic players", "Sidebar navigation for improved content accessibility and page exploration", "Regularly updated information on major tournament winners", "Custom animated background effect using JavaScript"],
         "challenges": "Researching and verifying accurate, relevant information while presenting it in a dynamic, user-friendly and visually appealing format",
         "learning": "Improved my ability to design and structure content-heavy websites, strengthened my front-end development skills, and gained experience deploying and maintaining a live site with its own domain."
+      }
+    },
+    {
+      "name": "B.R.A.N.D.O.N.",
+      "stack": ["Python", "Pygame"],
+      "earlier": false,
+      "image": "brandon",
+      "links": {
+        "Code": "https://github.com/brandsharky/B.R.A.N.D.O.N"
+      },
+      "description": "Earth's last line of defense against descending alien fleets. A Galaga-inspired Pygame arcade shooter built with custom-designed ships, four-direction movement, and a rebalanced difficulty curve.",
+      "details": {
+        "tagline": "Brutal Retaliation Against Nefarious Descending Orbital Nuisances: one pilot, three ships, and a planet to protect",
+        "problem": "The goal was to defend Earth from an endless invasion of descending aliens, or more accurately, to build a complete 2D arcade shooter in Pygame with escalating levels, lives, and scoring. I built the core by following Python Crash Course, then spent the rest of the project making it my own.",
+        "features": ["Fleets of hostile aliens that sweep across and down the screen, getting faster with every wave", "Three-ship mission structure with a live scoreboard and a high score tracked during each play session", "Four-direction ship movement, extended beyond the book's left and right controls for a more Galaga-like feel", "Alternate WASD controls alongside the arrow keys, so left-handed pilots can defend Earth too", "Custom ship and alien designs I created from scratch in Adobe Illustrator and exported as PNG sprites", "Scalable space background inspired by Regular Show that crops to the window instead of warping", "Rebalanced difficulty with slower speeds and a smaller starting fleet so players can last longer and chase high scores"],
+        "challenges": "The most important battles were fought on the home front. Getting smooth movement meant understanding the difference between pressing and holding a key, then adapting that same logic for up and down movement. Tuning the game was another fight, since both the starting speed and the speed increase per level needed repeated testing to land in the sweet spot between boring and impossible. The background initially warped on different window sizes, so I fixed it by cropping the image to the window rather than stretching it. The biggest effort was the custom ships, which meant planning, brainstorming, designing in Illustrator, tweaking, resizing, and exporting each one before it looked right in the game.",
+        "learning": "Strengthened my understanding of Python, Pygame, event-driven input, and organizing a larger project across multiple files. Gained experience tuning game difficulty and modifying an existing codebase without breaking it. Most importantly, learned how much ownership comes from going beyond a tutorial, since designing my own art and adding new mechanics turned a guided project into one that is truly mine."
+      }
+    },
+    {
+      "name": "Falling Sand Simulator",
+      "stack": ["Python", "Pygame"],
+      "earlier": false,
+      "image": "sand",
+      "links": {
+        "Code": ""
+      },
+      "description": "A real-time physics simulation where sand falls, bubbles drift upward, and rocks stay put, built with object-oriented programming and class inheritance for a university programming course.",
+      "details": {
+        "tagline": "A real-time particle simulation of sand, bubbles, and rocks built on object-oriented design and inheritance",
+        "problem": "The goal was to practice object-oriented programming and inheritance by building a particle simulation on top of a custom grid class, where every kind of particle shares core behavior but follows its own rules of motion.",
+        "features": [
+          "Custom Grid class with bounds-checked access, validated construction from nested lists, and independent copies",
+          "Shared Particle base class that tracks position and grid reference for every particle type",
+          "Sand, Bubble, and Rock subclasses that each define their own physics",
+          "Sand that falls and slides diagonally around obstacles, and bubbles that rise the same way in reverse",
+          "Diagonal movement rules that stop particles from squeezing through gaps between blocked cells",
+          "Functions to add and remove particles at any location, keeping the grid and the master particle list in sync",
+          "Two-pass update order that keeps falling sand and rising bubbles from leaving gaps in a column",
+          "Whimsical bubbles: an optional extension from the assignment, where bubbles drift sideways and rise lazily using weighted random choices, a deliberate idle chance, and fallback moves when blocked",
+          "Run through a provided Pygame interface (adapted from a Stanford CS106A project) with click-to-draw and erase controls"
+        ],
+        "challenges": "The hardest part was reasoning about diagonal movement. A particle cannot slip between two blocked cells, which means checking a neighboring cell in addition to the destination, and it took sketching the grid by hand to see which cell that was. Update order was the other tricky piece: moving particles in a single pass left visible gaps in falling columns, so sand and bubbles needed separate passes in opposite directions. Keeping the grid and the particle list consistent whenever particles were added or removed was a third, since a mismatch produces particles that vanish from the screen but keep moving. For the bubble extension, I had to tune the probabilities so that a blocked bubble falls back to other directions instead of freezing.",
+        "learning": "I learned how inheritance moves shared logic into one place so each subclass only defines what makes it different, and why a class should expose methods instead of letting other code reach into its data. The bubble extension introduced weighted random selection with cumulative probability ranges, and I learned to test randomized behavior with fixed seeds. Working through the diagonal rule and the update order also taught me to trace logic by hand on small examples before trusting it."
       }
     },
     {
@@ -111,7 +201,7 @@
       "earlier": false,
       "image": "shark_tides",
       "links": {
-        "Shark Tides": "https://brandsharky.github.io/SharkTides/",
+        "Live": "https://brandsharky.github.io/SharkTides/",
         "Code": "https://github.com/brandsharky/SharkTides"
       },
       "description": "A responsive, educational website that provides beginner-friendly shark facts, images, and a quiz while following the principles of dynamic web design.",
@@ -141,12 +231,12 @@
       }
     },
     {
-      "name": "Mindfullness",
+      "name": "Mindfulness",
       "stack": ["C#"],
       "earlier": false,
-      "image": "mindfullness",
+      "image": "mindfulness",
       "links": {
-        "Code": "https://github.com/brandsharky/Mindfullness"
+        "Code": "https://github.com/brandsharky/Mindfulness"
       },
       "description": "A C# application that guides users through structured breathing, reflection, and listing exercises, helping reduce stress and build consistent mindfulness habits.",
       "details": {
@@ -210,7 +300,7 @@
     },
     {
       "name": "Flappy Bird",
-      "stack": ["Python"],
+      "stack": ["Python", "Pygame"],
       "earlier": false,
       "image": "flappy_bird",
       "links": {
@@ -223,6 +313,24 @@
         "features": ["Classic Flappy Bird-style gameplay mechanics", "Physics-based movement including gravity and jumping mechanics", "Collision detection for pipes and boundaries", "Keyboard input handling for player control"],
         "challenges": "Implementing smooth physics-based movement and tuning game difficulty; managing collision detection and game state transitions in a way that felt responsive and consistent",
         "learning": "Gained practical experience with game loops, physics simulation, and user input handling in Python, while strengthening my understanding of how core game mechanics are structured."
+      }
+    },
+    {
+      "name": "Pong",
+      "stack": ["HTML", "CSS", "JavaScript"],
+      "earlier": false,
+      "image": "pong",
+      "links": {
+        "Live": "https://brandsharky.github.io/pong/",
+        "Code": "https://github.com/brandsharky/pong"
+      },
+      "description": "A two-player remake of the classic Pong game built by following a tutorial, serving as a hands-on exercise in game loops, collision detection, and keyboard input handling.",
+      "details": {
+        "tagline": "A two-player Pong remake built to practice game loops, collision detection, and keyboard input",
+        "problem": "The goal was to learn the fundamentals of game development by recreating a classic arcade game using only HTML, CSS, and JavaScript, as a fun side project between web development courses.",
+        "features": ["Two-player gameplay with keyboard controls for each paddle", "Smooth paddle movement that supports both pressing and holding keys", "Collision detection between the ball, paddles, and walls", "Ball speed that increases progressively as the game continues", "Scoreboard that tracks each player's points", "Reset button to restart the game at any time"],
+        "challenges": "Allowing players to hold a key down for continuous paddle movement, rather than only responding to single key presses, required a deeper understanding of how keyboard events work and how input should be tracked across the game loop. Another challenge was tuning the ball's speed increase, since too little made the game feel flat and too much made it unplayable, so finding the right increment took repeated testing and adjustment.",
+        "learning": "Gained practical experience with game loops, collision detection, and the difference between pressing and holding keys in JavaScript. Strengthened my understanding of how game state, input, and rendering work together, and learned how small tuning decisions like speed increments affect how a game feels to play."
       }
     },
     {
@@ -248,7 +356,7 @@
       "earlier": true,
       "image": "coolest_creature",
       "links": {
-        "Coolest Creature": "https://brandsharky.github.io/coolest-creature/",
+        "Live": "https://brandsharky.github.io/coolest-creature/",
         "Code": "https://github.com/brandsharky/coolest-creature"
       },
       "description": "My first website built from scratch. An early informational website about sharks featuring beginner-friendly facts and pictures.",
@@ -266,7 +374,7 @@
       "earlier": true,
       "image": "coolest_creature_2",
       "links": {
-        "Coolest Creature 2.0": "https://brandsharky.github.io/coolest-creature-2.0/",
+        "Live": "https://brandsharky.github.io/coolest-creature-2.0/",
         "Code": "https://github.com/brandsharky/coolest-creature-2.0"
       },
       "description": "A JavaScript-driven informational shark website with interactive forms, user input handling, and a dynamic \"days since\" calculator made from scratch.",
