@@ -9,7 +9,7 @@
         "Live": "https://studyhub-flax-ten.vercel.app/",
         "Code": "https://github.com/jkkitchen/studyhub"
       },
-      "description": "A full-stack web application built with a team of six that helps college students organize courses, assignments, deadlines, and study resources in one dashboard. I led the frontend and reviewed and merged code as part of the team's pull request workflow.",
+      "description": "A full-stack web application built in a team of six that helps college students organize courses, assignments, deadlines, and study resources in one dashboard. I led the frontend and reviewed and merged code as part of the team's pull request workflow.",
       "details": {
         "tagline": "A team-built student organization platform with Google sign-in, where I led the frontend design and helped review and merge team code",
         "problem": "The goal was to give college students one simple place to manage their academic responsibilities instead of tracking courses, deadlines, and study materials across separate tools, while working with a team of six on a shared codebase using a professional Git workflow.",
@@ -27,7 +27,7 @@
         "Live": "https://ba-sacrament-meetings.vercel.app/",
         "Code": "https://github.com/brandsharky/sacrament-meetings"
       },
-      "description": "A full-stack Next.js application, built week by week in a web development course, that lets bishopric leaders plan sacrament meeting agendas and lets members view current and past programs.",
+      "description": "A full-stack Next.js application built to let bishopric leaders plan sacrament meeting agendas and lets members view current and past programs.",
       "details": {
         "tagline": "A full-stack meeting planner with a live PostgreSQL database, protected admin tools, and URL-driven search",
         "problem": "The goal was to build a real application that helps ward leaders plan and review sacrament meeting programs, including leadership, announcements, hymns, musical numbers, speakers, and prayers, while members can view current and past programs. Each week added a new layer of professional web development to the same codebase.",
@@ -43,7 +43,7 @@
           "Authentication with Auth.js credentials and hashed passwords, with protected admin routes that redirect signed-out users to the login page"
         ],
         "challenges": "The hardest part was working across every layer of the application at once: frontend styling, middleware, authentication and authorization, database queries, and validation. Each layer had to work correctly with the others, so a problem in one place often showed up somewhere else. Making error.tsx and not-found.tsx work was especially tricky, since I had to learn how Next.js scopes them by route segment so that failed operations and missing records were handled gracefully across many pages instead of just one. I also spent a lot of time making sure data was fetched from the database correctly and that user input was validated on the server, so only the content the application expected was ever saved. Authentication also worked locally but failed after deployment, because the secrets live in a local environment file that is never committed. Reading the Vercel logs pointed to a missing AUTH_SECRET, and adding it as a production environment variable and redeploying fixed it.",
-        "learning": "Gained hands-on experience building and deploying a full-stack application with the Next.js App Router, TypeScript, and PostgreSQL. Strengthened my understanding of Server Actions, server-side validation, route groups, URL-driven state, authentication, and metadata. Most importantly, learned how to grow one application week by week without breaking what already worked."
+        "learning": "Gained hands-on experience building and deploying a full-stack application with the Next.js App Router, TypeScript, and PostgreSQL. Strengthened my understanding of Server Actions, server-side validation, route groups, URL-driven state, authentication, and metadata. Most importantly, learned how to grow one application update by update without breaking what already worked."
       }
     },
     {
@@ -55,10 +55,10 @@
         "Live": "https://cse340-c96w.onrender.com/",
         "Code": "https://github.com/brandsharky/cse340"
       },
-      "description": "A full-stack service management application built throughout a backend development course using server-side rendering, relational databases, authentication, middleware, and MVC architecture.",
+      "description": "A full-stack service management application built using server-side rendering, relational databases, authentication, middleware, and MVC architecture.",
       "details": {
         "tagline": "A full-stack service management application built progressively with Node.js, Express, EJS, and PostgreSQL",
-        "problem": "The goal was to transform an existing web application into a fully dynamic, database-driven system while progressively learning and implementing the core concepts of backend web development. Each week introduced new functionality through learning activities, team development, and individual assignments, culminating in a final feature that integrated concepts from across the course.",
+        "problem": "The goal was to transform an existing web application into a fully dynamic, database-driven system while progressively learning and implementing core concepts of backend web development. Each update introduced new functionality through learning activities, team development, and individual assignments, culminating in a final feature that integrated concepts from across the course.",
         "features": ["Server-side rendered pages using Node.js, Express.js, and EJS", "Relational PostgreSQL database for organizations, service projects, categories, and users", "MVC architecture separating routes, controllers, models, and views", "Full CRUD functionality for organizations, projects, and categories", "Many-to-many relationships between service projects and categories", "User registration, login, logout, and session management", "Password hashing and secure user authentication using bcrypt", "Role-based authorization middleware for protecting administrator functionality", "Server-side and client-side form validation with user feedback", "User dashboard displaying volunteer projects and account information", "Middleware for flash messages and request-based application behavior", "Production deployment using Render"],
         "challenges": "The primary challenge was continuously expanding an existing application without breaking the functionality that had already been developed. As new concepts were introduced, the application had to evolve from basic server-side routing into a structured MVC application with database relationships, CRUD operations, validation, sessions, authentication, and role-based authorization. Managing the flow of data between routes, controllers, models, SQL queries, and EJS templates required careful debugging and a stronger understanding of how the different layers of a backend application interact.",
         "learning": "Developed a strong foundation in backend web development and learned how frontend applications connect to servers, databases, and persistent user data. Strengthened my understanding of Node.js, Express.js, EJS, PostgreSQL, SQL, MVC architecture, middleware, authentication, authorization, sessions, validation, and deployment. Most importantly, gained experience progressively developing and maintaining a larger application while learning how individual backend concepts work together as part of a complete system."
